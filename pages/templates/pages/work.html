@@ -1,0 +1,44 @@
+{% extends 'pages/base.html' %}
+
+{% block title %}Portfolio{% endblock %}
+
+{% load static %}
+{% block content %}
+<section>
+    <h2>Portfolio:</h2>
+    <div class="item">
+        <img src="{% static 'images/4882.png' %}" width="270" height="480">
+        <h3>Work In Progress: 4882 Capstone Project</h3>
+        <h4>2024</h4>
+        <p>The Capstone project I am currently working with a team on a part database app utilizing PowerApps for the company C&D Plastics.</p>
+    </div>
+
+    <div class="item">
+        <img src="{% static 'images/4081.png' %}" width="480" height="270">
+        <h3>4081: PartSlingers</h3>
+        <h4>2023</h4>
+        <p>In this project, our team created a mock computer retail online store, PartSlingers, with many different features with Ruby on Rails.</p>
+    </div>
+
+    <div class="item">
+        <img src="{% static 'images/3825.png' %}" width="480" height="270">
+        <h3>3825: Group Chat TCP</h3>
+        <h4>2023</h4>
+        <p>In this project, me and my partner created a group chat in Python using TCP connections.</p>
+    </div>
+
+    <div class="item">
+        <img src="{% static 'images/4741.png' %}" width="480" height="270">
+        <h3>4741: Using Semantic Segmentation to capture unused land</h3>
+        <h4>2023</h4>
+        <p>In this project, me and my partner created a model that semantically segmented aerial landscape photos into either building, road, or unused. This would have application in urban planning.</p>
+    </div>
+
+    <div class="item">
+        <img src="{% static 'images/4745.png' %}" width="270" height="270">
+        <h3>4745: Image Generation</h3>
+        <h4>2023</h4>
+        <p>In this project, me and my partner created a model generated pictures of a bobblehead we trained it on using Stable Diffusion and DreamBooth. We inserted this bobblehead instance into a larger Stable Diffusion model.</p>
+    </div>
+</section>
+{% endblock %}
