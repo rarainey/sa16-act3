@@ -1,0 +1,51 @@
+html {
+    background-image: url("../images/background.jpg");
+    background-size: cover
+}
+
+header {
+    background-color: royalblue;
+    border: 2px solid black;
+    padding: 10px
+    }
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+
+    a {color: inherit; text-decoration: inherit;};
+    a:hover {color: blue;}
+    a:active {color: aquamarine};
+    h1 {font-family: Arial, Helvetica, sans-serif; border-right: 2px solid black;};
+    h3 {padding-top: 10px; padding-right: 25px; text-align: right;}
+}
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    h2 {font-size: 30px;}
+    p {padding-left: 20px; font-size: 20px; max-width: 50%;}
+}
+
+.item {
+    display :grid;
+    grid-template-columns: 3fr 1fr 1fr 1fr;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 15px;
+    border-bottom: 2px black solid;
+
+    img, video {
+        max-width: 100%;
+        height: auto;
+        };
+
+    p {width: 500px}
+}
+
+.field {
+    display :grid;
+    grid-template-rows: 50px 30px;
+    width: 25%
+}
